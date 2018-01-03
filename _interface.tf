@@ -19,7 +19,7 @@ variable "resource_group_tag" {
 
 variable "vn_name" {
   type = "string"
-  default = "my_first_vn"
+  default = "myfirstvn"
   description = "This variable defines the virtual network name"
 }
 
@@ -33,4 +33,16 @@ variable "vn_location" {
   type = "string"
   default = "East US"
   description = "This variable defines the virtual network location"
+}
+
+variable "sb_name" {
+  type = "string"
+  default = "myfirstsubnet"
+  description = "This variable identifies the subnet"
+}
+
+variable "sb_address_prefix" {
+  type = "string"
+  default = "10.0.2.0/24"
+  description = "This variable defines the address space default"
 }
