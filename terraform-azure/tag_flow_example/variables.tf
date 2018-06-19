@@ -24,3 +24,21 @@ variable "owner_tag" {
     default     = "ops@" 
     description = "Owner of resources created."
 }
+
+variable "vn_name" {
+    type        = "string"
+    default     = "myfirstvn"
+    description = "This variable defines the virtual network name"
+}
+
+variable "vn_address_space" {
+    type        = "list"
+    default     = ["10.0.0.0/16"]
+    description = "This is the default open network"
+}
+
+variable "vn_location" {
+    type        = "string"
+    default     = "East US"
+    description = "This variable defines the virtual network location"
+}
