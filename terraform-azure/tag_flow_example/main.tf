@@ -1,11 +1,11 @@
 # Create a resource group if it doesn’t exist
 resource "azurerm_resource_group" "myfirstrg" {
-  name     = "myResourceGroup"
-  location = "East US"
+  name     = "${var.resource_group_name}"
+  location = "${var.resource_group_location}"
 
   tags {
-    environment = "Development"
-    ttl         = "-1"
-    owner       = "ops@"
+    environment = "${var.environment_tag}"
+    ttl         = "${var.ttl_tag}"
+    owner       = "${var.owner_tag}"
   }
 }
