@@ -38,3 +38,10 @@ variable "vn_location" {
     default     = "East US"
     description = "This variable defines the virtual network location"
 }
+
+variable "ssh_public_key" {
+    type        = "string"
+    default     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZS+E6KRZ9IG+X0/gKUB+9n5mSHb7INsvDYTBr2okFVICEdxEtiU2QbW617rK+AS7KG/U900V72OLAt4HJZsyJN8poozEvsUsZ+EiwPFH6UBmMR8vDXsr1JPXpiNuyz6mAeiDvSu3s/dXSi5C1qS98K36JukTVdlGi1qA+RB0ZZiUN3ClOHsRzo4nRLK5yUq5JRQgv2jEDuLcVivHJjFjB6mj1Cxfct9Tb50hhzryPkRp2LNV/HB2XtvNmbhxk1B4MpTh1adIusLEiC4njeOImY/wOoUDM+gIFkqAemCj93lBprpD7fHzVrzezXzMgCb0E0l6hymFLHl5SxknCY3jb mcbkingdom@mcballuxio.local"
+    description = "The SSH public key to put in authorized keys on the target host"
+}
+    
