@@ -44,3 +44,9 @@ variable "sb_address_prefix" {
     default     = "10.0.1.0/24"
     description = "Subnet CIDR"
 }
+
+variable "admin_password" {
+    type        = "string"
+    default     = "8675309-Jenny"
+    description = "Admin password for windows servers created"
+}
