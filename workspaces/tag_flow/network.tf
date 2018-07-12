@@ -10,3 +10,11 @@ resource "azurerm_virtual_network" "myfirstvn" {
       owner       = "${var.owner_tag}"
     }
 }
+
+resource "azurerm_subnet" "myfirstsubnet" {
+    name                 = "${var.student}-Subnet"
+    resource_group_name  = "${azurerm_resource_group.myfirstrg.name}"
+    virtual_network_name = "${azurerm_virtual_network.myfirstvn.name}"
+    address_prefix       = "${var.sb_address_prefix}"
+
+}

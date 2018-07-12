@@ -38,3 +38,9 @@ variable "vn_location" {
     default     = "East US"
     description = "This variable defines the virtual network location"
 }
+
+variable "sb_address_prefix" {
+    type        = "string"
+    default     = "10.0.1.0/24"
+    description = "Subnet CIDR"
+}
