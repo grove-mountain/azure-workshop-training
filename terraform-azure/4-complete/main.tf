@@ -3,6 +3,6 @@ resource "azurerm_resource_group" "myterraformgroup" {
   location = "${var.resource_group_location}"
 
   tags {
-    environment = "${var.resource_group_tag}"
+    environment = "${var.environment_tag}"
   }
 }

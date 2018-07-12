@@ -8,10 +8,10 @@ variable "resource_group_location" {
   description = "This variable defines the…."
 }
 
-variable "resource_group_tag" {
+variable "environment_tag" {
   type        = "string"
   default     = "Production"
-  description = "Production resource tag"
+  description = "Environment Tag"
 }
 
 variable "vn_name" {
